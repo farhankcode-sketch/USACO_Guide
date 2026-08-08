@@ -7,10 +7,10 @@ int main(){
     string basketball;
     cin>> basketball;
     int k;
-    k = basketball.length()
+    k = basketball.length();
     int A = 0;
     int B = 0;
-    for (int i =0, i < k , i+=2){
+    for (int i = 0; i < k; i+=2){
         if (basketball[i] == 'A'){
             if (basketball[i+1] == '1'){
                 A = A +1 ;
@@ -23,13 +23,13 @@ int main(){
                 B = B +1 ;
             }else {
                 B = B +2;
+            }
         }
     }
-    #WE KNOW THE VALUE OF A AND B NOW JUST ANNOUNCE THE WINNER BY COMPARING WHO IS WINNNG !
     if (A > B){
-        cout << A;
+        cout << 'A';
     } else { 
-        cout << B;
+        cout << 'B';
     }
     return 0;
 }
